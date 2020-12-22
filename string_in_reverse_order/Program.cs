@@ -10,6 +10,11 @@ namespace string_in_reverse_order
     {
         static void Main(string[] args)
         {
+            string userWords = Console.ReadLine();
+            char[] userWordsRevers = userWords.ToCharArray();
+            Array.Reverse(userWordsRevers);
+            userWords = new string(userWordsRevers);
+            Console.WriteLine(userWords);
         }
     }
 }
